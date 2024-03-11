@@ -1,0 +1,479 @@
+/* Header ==================================*/
+header{
+    min-height: 5rem;
+}
+
+
+.HeaderWrap{
+    position: relative;
+    width: 95%;
+    min-height: 5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header_Title =============================*/
+.Header_Link{
+    font-size: 1.1rem;
+    color: #fafafa;
+}
+
+.Header_Subtitle{
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+
+/* Header_List =================================*/
+.Header_List{
+    display: flex;
+    align-items: center;
+}
+
+.Header_List li{
+    float: left;
+    margin-left: 1rem;
+}
+
+.Header_List li a{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* Mode ----------------------------------*/
+.Mode{
+    position: relative;
+    width: 3rem;
+    height: 1.3rem;
+    border: 2px solid #fafafa;
+    border-radius: 1rem;
+}
+
+.Mode.Dark{
+    border: 2px solid #fafafa;
+    border-radius: 1rem;
+}
+
+.Mode.Light{
+    border: 2px solid #111313;
+    border-radius: 1rem;
+}
+
+.ModeBtn{
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ModeBtn.Dark{
+    background-color: #fafafa;
+}
+
+
+.ModeBtn.Light{
+    background-color: #111313;
+}
+
+
+/* Blog ---------------------------------------*/
+.Blog{
+    background: url(../img/tstorylogo.svg) no-repeat;
+}
+
+
+/* Github --------------------------------------*/
+.Github{
+    background: url(../img/githublogo.svg) no-repeat;
+}
+
+/* Main ========================================*/
+.MainInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+
+/* Information ==================================*/
+.Information{
+    width: 33%;
+    height: 953px;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+    box-shadow: 0px 0px 5px #fafafa;
+    overflow: hidden;
+}
+
+/* ProfileId ------------------------------------*/
+.ProfileId{
+    display: inline-block;
+    width: 100%;
+    padding:1rem 0rem 0rem 0rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fafafa;
+}
+
+/* Profile ---------------------------------------*/
+.Profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding:1rem;
+    box-sizing: border-box;
+}
+
+/* ProfileImg -------------------------------------*/
+.ProfileImg{
+    width: 115px;
+    height: 115px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, red 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    overflow: hidden;
+}
+
+.ProfileImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ProfileList ------------------------------------*/
+.ProfileList{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.ProfileList_item{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ProfileList_item:first-child{
+    margin: 0px;
+}
+
+.Item_number{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color:#fafafa;
+}
+
+.Item_cate{
+    margin-top:0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:#999;
+}
+
+/* ProfileInfo -------------------------------------*/
+.ProfileInfo{
+    width: 95%;
+    margin: auto;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+}
+
+.Name{
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    color: #fafafa;
+}
+
+.paragraph{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fafafa;
+}
+
+/* Profilecontact ---------------------------------*/
+.Profilecontact{
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+}
+
+.Profilecontact_List{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profilecontact_List li{
+    width: 32%;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding:0.7rem;
+    box-sizing: border-box;
+}
+
+.Profilecontact_List li a{
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.Profilecontact_item_follow{
+    color:#fafafa;
+    background-color: #405DE6;
+}
+
+.Profilecontact_item_message{
+    background-color: #111313;
+}
+
+.Profilecontact_item_call{
+    background-color: #111313;
+}
+
+/* PortfolioGrid --------------------------------*/
+.ProfileGrid{
+    height: 60%;
+}
+
+.ProfileGrid::-webkit-scrollbar{
+    display:none;
+}
+
+/* ProfileGrid_cate ---------------------------*/
+
+.ProfileGrid_cate{
+    margin-top: 2rem;
+}
+
+.ProfileGrid_cate_list{
+    display: flex;
+}
+
+.ProfileGrid_cate_item{
+    width: 33.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ProfileGrid_cate_item.on{
+    border-bottom: 1px solid #fafafa;
+}
+
+/* 게시물 ---------------------------------*/
+.ProfileGrid_cate_item:first-child .icon{
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    margin-bottom: 0.5rem;
+    background: url(../img/grid_999.svg) no-repeat center ;
+}
+
+.ProfileGrid_cate_item:first-child .icon.on{
+    background: url(../img/grid.svg) no-repeat center ;
+}
+
+/* 블로그 ---------------------------------*/
+.ProfileGrid_cate_item:nth-child(2) .icon{
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    margin-bottom: 0.5rem;
+    background: url(../img/tstory_999.svg) no-repeat center ;
+}
+
+.ProfileGrid_cate_item:nth-child(2) .icon.on{
+    background: url(../img/tstorylogo.svg) no-repeat center ;
+}
+
+/* 작업물 ---------------------------------*/
+.ProfileGrid_cate_item:last-child .icon{
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    margin-bottom: 0.5rem;
+    background: url(../img/folder_999.svg) no-repeat center ;
+}
+
+.ProfileGrid_cate_item:last-child .icon.on{
+    background: url(../img/folder.svg) no-repeat center ;
+}
+
+/* Grid_cate -----------------------------------------*/
+.Grid_cate.on{
+    display: block;
+}
+
+.Grid_cate{
+    position: relative;
+    display: none;
+    height: 100%;
+    margin-top: 1px;
+}
+
+
+.Grid_cate_item{
+    float: left;
+    width: 33%;
+    margin: 0px 0.5px;
+    border-bottom: 1px solid black;
+}
+
+
+.Grid_cate_item img{
+    width: 100%;
+    height: 199px;
+    object-fit: cover;
+}
+
+/* 카테고리 블로그 -------------------------*/
+.Grid_cate_blog{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Grid_cate_blog_img{
+    width: 80px;
+    height: 80px;
+    background: url(../img/tstory_999.svg) no-repeat;
+}
+
+.Grid_cate_blog_link{
+    position: relative;
+    margin-top: 1rem;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fafafa;
+}
+
+.Grid_cate_blog_link:hover{
+    color: #405DE6;
+}
+
+
+/* StackInfo =============================================*/
+.StackInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 64%;
+    height: 953px;
+}
+
+
+/* WorkSlide =============================================*/
+@keyframes slide_left{
+    0% { transform: translateX(0); }
+   50% { transform: translateX(-100%); }
+   50.01% { transform: translateX(100%); }
+   100% { transform: translateX(0); }
+}
+
+@keyframes slide_right {
+   0% { transition: translateX(0); }
+   100% { transform: translateX(-200%); }
+}
+.WorkSlide{
+    position: relative;
+    width: 100%;
+    height: 419px;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.WorkSlideTitle{
+    width: 95%;
+    margin: auto;
+    padding: 1rem 0rem;
+    font-size: 0.9rem;
+    color: #fafafa;
+}
+
+.WorkSlideWrap{
+    display: flex;
+}
+
+.WorkSlideWrap_list{
+    display: flex;
+}
+
+.WorkSlideWrap_list.clone{
+    display: flex;
+}
+
+.WorkSlideWrap_list{
+    animation: slide_left 250s linear infinite;
+}
+
+
+.WorkSlideWrap_list.clone{
+    animation: slide_right 250s linear infinite;
+}
+
+
+.WorkSlideWrap:hover .WorkSlideWrap_list{
+    animation-play-state: paused;
+}
+
+.WorkSlideWrap_item{
+    flex-shrink: 0;
+    width: 250px;
+    height: 330px;
+    margin: 0rem 0.5rem;
+}
+
+.WorkSlideWrap_item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit:fill;
+}
+
+.WorkSlideWrap_item:nth-child(2) img{
+    object-fit:cover;
+}
+
+.WorkSlideWrap_item:last-child img{
+    object-fit:cover;
+}
+
+.Stack_Mystory{
+    width: 100%;
+    height: 285px;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.Contact{
+    width: 100%;
+    height: 142px;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
