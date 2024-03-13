@@ -254,6 +254,7 @@ header{
 /* PortfolioGrid --------------------------------*/
 .ProfileGrid{
     height: 60%;
+    overflow-y: scroll;
 }
 
 .ProfileGrid::-webkit-scrollbar{
@@ -386,6 +387,11 @@ header{
     height: 953px;
 }
 
+/* WorkWrap ================================================*/
+.WorkWrap{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* WorkSlide =============================================*/
 @keyframes slide_left{
@@ -401,7 +407,7 @@ header{
 }
 .WorkSlide{
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 419px;
     border-radius: 1rem;
     background-color: #1a1a1a;
@@ -411,8 +417,8 @@ header{
 .WorkSlideTitle{
     width: 95%;
     margin: auto;
-    padding: 1rem 0rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 1rem;
     color: #fafafa;
 }
 
@@ -464,16 +470,308 @@ header{
     object-fit:cover;
 }
 
-.Stack_Mystory{
-    width: 100%;
-    height: 285px;
+/* Notice ========================================*/
+.Notice{
+    position: relative;
+    width: 27%;
+    height: 419px;
     border-radius: 1rem;
     background-color: #1a1a1a;
 }
 
-.Contact{
+.Notice div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.Web_Standards{
+    position: relative;
+    position: absolute;
+    top:40%;
+    left:5%;
+    width: 140px;
+    height: 140px;
+    color: #4432c7;
+    background-color: #4432c7;
+    z-index: 999;
+}
+
+.Web_Standards::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    content: "웹 표준성 80%";
+}
+
+.Web_Accessibilty{
+    position: absolute;
+    top:40%;
+    right:5%;
+    width: 135px;
+    height: 135px;
+    color: #bd1aeb;
+    background-color: #bd1aeb;
+}
+
+.Web_Accessibilty::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    content: "웹 접근성 80%";
+}
+
+.Frontend{
+    position: absolute;
+    top:60%;
+    left:15%;
+    width: 125px;
+    height: 125px;
+    color: #41c267;
+    background-color: #41c267;
+}
+
+.Frontend::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    content: "프레임워크 React 55%";
+}
+
+.Design_skill{
+    position: absolute;
+    bottom:0%;
+    right:7%;
+    width: 125px;
+    height: 125px;
+    color: #ff7c1c;
+    background-color: #ff7c1c;
+}
+
+.Design_skill::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    content: "Potoshop & Illustrator 70%";
+}
+
+
+/* Stack_Social_About =======================================*/
+.Stack_Social_About{
+    display: flex;
     width: 100%;
-    height: 142px;
+    height: 285px;
+    padding: 2rem;
+    box-sizing: border-box;
     border-radius: 1rem;
     background-color: #1a1a1a;
+}
+
+/* Stack -------------------------------------*/
+.Stack{
+    width: 60%;
+}
+
+.StackList{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.StackItem{
+    position: relative;
+    padding-right: 2rem;
+    transition: all 0.5s;
+}
+
+.PercentBar{
+    display: none;
+    position: relative;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.StackItem:first-child .PercentBar{
+    right: 0px;
+    width:0px;
+    background-color: #ff590c;
+}
+
+.StackItem:first-child .PercentBar::after{
+    position: absolute;
+    top:50%;
+    margin-left: 110%;
+    transform: translateY(-50%);
+    content:"75%";
+
+}
+
+.StackItem:nth-child(2) .PercentBar{
+    right: 0px;
+    width:0px;
+    background-color: #14b9ff;
+}
+
+.StackItem:nth-child(2) .PercentBar::after{
+    position: absolute;
+    top:50%;
+    margin-left: 110%;
+    transform: translateY(-50%);
+    content:"80%";
+
+}
+
+.StackItem:nth-child(3) .PercentBar{
+    right: 0px;
+    width: 0px;
+    background-color: #fedd21;
+}
+
+.StackItem:nth-child(3) .PercentBar::after{
+    position: absolute;
+    top:50%;
+    margin-left: 110%;
+    transform: translateY(-50%);
+    content:"65%";
+
+}
+
+.StackItem:nth-child(4) .PercentBar{
+    right: 0px;
+    width: 0px;
+    background-color: #6eff5a;
+}
+
+.StackItem:nth-child(4) .PercentBar::after{
+    position: absolute;
+    top:50%;
+    margin-left: 110%;
+    transform: translateY(-50%);
+    content:"55%";
+
+}
+.StackItem:last-child .PercentBar{
+    right: 0px;
+    width: 0px;
+    background-color: #0004ff;
+}
+
+.StackItem:last-child .PercentBar::after{
+    position: absolute;
+    top:50%;
+    margin-left: 110%;
+    transform: translateY(-50%);
+    content:"50%";
+
+}
+
+/* Social -------------------------------------*/
+.Social{
+    width: 20%;
+}
+
+/* About -------------------------------------*/
+.About{
+    width: 20%;
+}
+
+
+.Cate_title{
+    font-size: 1rem;
+    color: #fafafa;
+}
+
+.Stack_Social_About ul{
+    margin-top: 1rem;
+}
+
+.Stack_Social_About ul li{
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.SocialItem_link{
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #999;
+}
+
+.Contact{
+    position: relative;
+    width: 100%;
+    height: 142px;
+    padding:2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.ContactList{
+    position: absolute;
+    top:50%;
+    right: 0%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.ContactItem{
+    padding:0.6rem 1.7rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255 ,0.05);
+}
+
+.ContactItem:last-child{
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+.ContactItem a{
+    color: #fafafa;
 }

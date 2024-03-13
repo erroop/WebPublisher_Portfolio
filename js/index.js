@@ -48,5 +48,20 @@ $(function(){
     const WorkSlideWrap_list_clone = WorkSlideWrap_list.clone()
     WorkSlideWrap_list_clone.appendTo(".WorkSlideWrap");
     
-    WorkSlideWrap.find(".WorkSlideWrap_list").eq(1).addClass("clone")
+    WorkSlideWrap.find(".WorkSlideWrap_list").eq(1).addClass("clone");
+
+    // Notice animate =============================================
+    const Notice_item = $(".Notice div");
+    Notice_item.eq(0).stop().animate({top: "12%" , opacity : "1"}, 1000);
+    Notice_item.eq(1).stop().delay(600).animate({top: "23%"  , opacity : "1"}, 1000);
+    Notice_item.eq(2).stop().delay(1200).animate({top: "47%"  , opacity : "1"}, 1000);
+    Notice_item.eq(3).stop().delay(1800).animate({bottom: "5%"  , opacity : "1"}, 1000);
+
+    // Skill Stack percent bar ====================================
+    const StackList = $(".StackList");
+    StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-350px" , width : "350px"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-400px" , width : "400px"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-305px" , width : "305px"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-255px" , width : "255px"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-250px" , width : "250px"}, 1000, "linear").css({display : "block"});
 })
