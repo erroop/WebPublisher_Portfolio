@@ -632,7 +632,6 @@ header{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    
     height: 60%;
     box-sizing: border-box;
 }
@@ -773,5 +772,133 @@ header{
 }
 
 .ContactItem a{
+    color: #fafafa;
+}
+
+/* MainWork_coex ===========================================*/
+.MainWorkWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+/* WorkFlex -------------------------------------------*/
+.WorkFlex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.WorkFlex div{
+    width: 49%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+/* WorkFlexImg ---------------------------------------*/
+.WorkFlexImg_list{
+    position: relative;
+    height: 100%;
+}
+
+.WorkFlexImg_list li{
+    width: 70%;
+    height: 60%;
+    box-shadow: 0px 0px 5px #d3d3d3;
+}
+
+/* coex ------------------------------------*/
+.Desktop_coex{
+    position:absolute;
+    top:10%;
+    left:10%;
+    background: url(../img/coex.png) no-repeat center top / 100%;
+    z-index: 3;
+}
+
+.Tablet_coex{
+    position:absolute;
+    top:17%;
+    left:15%;
+    background: url(../img/coex_tablet.png) no-repeat top / 70%;
+    background-color:#111313;
+    z-index: 2;
+}
+
+.Mobile_coex{
+    position:absolute;
+    top:24%;
+    left:20%;
+    background: url(../img/coex_mobile.png) no-repeat center top / 45%;
+    background-color:#111313;
+    z-index: 1;
+}
+
+/* lh ------------------------------------*/
+.Desktop_lh{
+    position:absolute;
+    top:10%;
+    left:20%;
+    background: url(../img/lh.png) no-repeat center top /cover;
+    z-index: 3;
+}
+
+.Tablet_lh{
+    position:absolute;
+    top:17%;
+    left:15%;
+    background: url(../img/lh_tablet.png) no-repeat top / 70%;
+    background-color:#111313;
+    z-index: 2;
+}
+
+.Mobile_lh{
+    position:absolute;
+    top:24%;
+    left:10%;
+    background: url(../img/lh_mobile.png) no-repeat center top / 45%;
+    background-color:#111313;
+    z-index: 1;
+}
+
+/* cu ------------------------------------*/
+
+/* WorkFlexTitle -------------------------------------------*/
+.WorkFlexTitle{
+    position: relative;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.WorkFlexTitle_name{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #999;
+}
+
+.WorkFlexTitle_paragraph{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: #fafafa;
+    font-family: "Hahmlet", serif;
+}
+
+.WorkFlexTitle_link{
+    position: relative;
+    position: absolute;
+    bottom:6%;
+    left:6%;
+    padding:0.8rem 4rem;
+    border: 2px solid #fafafa;
+    border-radius: 0.3rem;
+    font-weight: 600;
     color: #fafafa;
 }
