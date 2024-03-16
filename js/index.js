@@ -1,4 +1,45 @@
 $(function(){
+    // scroll event ===========================================
+    const MainWorkWrap = $(".MainWorkWrap");
+    const WorkFlex = $(".WorkFlex");
+    const WorkFlexTitle_paragraph = $(".WorkFlexTitle_paragraph");
+    const WorkFlexTitle_name =   $(".WorkFlexTitle_name");
+    $(window).mousewheel(function(e, delta){
+        if(delta > 0){
+            if(MainWorkWrap.eq(0).offset().top > $(document).scrollTop()){
+                WorkFlex.eq(0).css({width : "80%", height : "80%"});
+                WorkFlexTitle_paragraph.eq(0).css({fontSize : "1rem"})
+                WorkFlexTitle_name.eq(0).css({fontSize : "0.8rem"})
+            }
+            if(MainWorkWrap.eq(1).offset().top > $(document).scrollTop()){
+                WorkFlex.eq(1).css({width : "80%", height : "80%"});
+                WorkFlexTitle_paragraph.eq(1).css({fontSize : "1rem"})
+                WorkFlexTitle_name.eq(1).css({fontSize : "0.8rem"})
+            }
+            if(MainWorkWrap.eq(2).offset().top > $(document).scrollTop()){
+                WorkFlex.eq(2).css({width : "80%", height : "80%"});
+                WorkFlexTitle_paragraph.eq(2).css({fontSize : "1rem"})
+                WorkFlexTitle_name.eq(2).css({fontSize : "0.8rem"})
+            }
+        }
+        else if(delta < 0){
+           if(300 < $(document).scrollTop()){
+                WorkFlex.eq(0).css({width : "100%", height : "100%"});
+                WorkFlexTitle_paragraph.eq(0).css({fontSize : "1.4rem"})
+                WorkFlexTitle_name.eq(0).css({fontSize : "1rem"});
+           } 
+           if(MainWorkWrap.eq(0).offset().top < $(document).scrollTop()){
+                WorkFlex.eq(1).css({width : "100%", height : "100%"});
+                WorkFlexTitle_paragraph.eq(1).css({fontSize : "1.4rem"})
+                WorkFlexTitle_name.eq(1).css({fontSize : "1rem"});
+           }
+           if(MainWorkWrap.eq(1).offset().top < $(document).scrollTop()){
+                WorkFlex.eq(2).css({width : "100%", height : "100%"});
+                WorkFlexTitle_paragraph.eq(2).css({fontSize : "1.4rem"})
+                WorkFlexTitle_name.eq(2).css({fontSize : "1rem"});
+           }
+        }
+    })
 
     // Darkmode / Lightmode btn click =========================
     const Mode = $(".Mode");

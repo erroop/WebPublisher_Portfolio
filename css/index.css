@@ -790,8 +790,9 @@ header{
 .WorkFlex{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    transition: all 1s;
 }
 
 .WorkFlex div{
@@ -868,6 +869,31 @@ header{
 }
 
 /* cu ------------------------------------*/
+.Desktop_cu{
+    position:absolute;
+    top:10%;
+    left:10%;
+    background: url(../img/cu.png) no-repeat center top /cover;
+    z-index: 3;
+}
+
+.Tablet_cu{
+    position:absolute;
+    top:17%;
+    left:15%;
+    background: url(../img/cu_tablet.png) no-repeat top / 70%;
+    background-color:#111313;
+    z-index: 2;
+}
+
+.Mobile_cu{
+    position:absolute;
+    top:24%;
+    left:20%;
+    background: url(../img/cu_mobile.png) no-repeat center top / 45%;
+    background-color:#111313;
+    z-index: 1;
+}
 
 /* WorkFlexTitle -------------------------------------------*/
 .WorkFlexTitle{
@@ -877,18 +903,20 @@ header{
 }
 
 .WorkFlexTitle_name{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #999;
+    transition: all 1s;
 }
 
 .WorkFlexTitle_paragraph{
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 2.5rem;
     color: #fafafa;
     font-family: "Hahmlet", serif;
+    transition: all 1s;
 }
 
 .WorkFlexTitle_link{
