@@ -13,7 +13,7 @@ header{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;;
 }
 
 /* Header_Title =============================*/
@@ -624,6 +624,7 @@ header{
     position: relative;
     padding-right: 2rem;
     transition: all 0.5s;
+    color: #999;
 }
 
 .PercentBar{
@@ -733,8 +734,11 @@ header{
 .Stack_Social_About ul li{
     font-size: 0.8rem;
     line-height: 2rem;
-    color: #999;
     cursor: pointer;
+}
+
+.Stack_Social_About ul li a{
+    color: #999;
 }
 
 .SocialItem_link{
@@ -806,93 +810,122 @@ header{
 .WorkFlexImg_list{
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 
 .WorkFlexImg_list li{
     width: 70%;
     height: 60%;
     box-shadow: 0px 0px 5px #d3d3d3;
+    transition: all 1s;
 }
 
 /* coex ------------------------------------*/
-.Desktop_coex{
+.WorkFlexImg_list.coex li:first-child{
     position:absolute;
     top:10%;
     left:10%;
-    background: url(../img/coex.png) no-repeat center top / 100%;
     z-index: 3;
+}
+
+.Desktop_coex{
+    background: url(../img/coex.png) no-repeat center top / 100%;
+}
+
+.WorkFlexImg_list.coex li:nth-child(2){
+    position:absolute;
+    top:17%;
+    left:15%;
+    z-index: 2;
 }
 
 .Tablet_coex{
-    position:absolute;
-    top:17%;
-    left:15%;
     background: url(../img/coex_tablet.png) no-repeat top / 70%;
     background-color:#111313;
-    z-index: 2;
+}
+
+.WorkFlexImg_list.coex li:last-child{
+    position:absolute;
+    top:24%;
+    left:20%;
+    z-index: 1;
 }
 
 .Mobile_coex{
-    position:absolute;
-    top:24%;
-    left:20%;
     background: url(../img/coex_mobile.png) no-repeat center top / 45%;
     background-color:#111313;
-    z-index: 1;
 }
 
 /* lh ------------------------------------*/
-.Desktop_lh{
+.WorkFlexImg_list.lh li:first-child{
     position:absolute;
     top:10%;
     left:20%;
-    background: url(../img/lh.png) no-repeat center top /cover;
     z-index: 3;
+}
+
+.Desktop_lh{
+    background: url(../img/lh.png) no-repeat center top /cover;
+}
+
+.WorkFlexImg_list.lh li:nth-child(2){
+    position:absolute;
+    top:17%;
+    left:15%;
+    z-index: 2;
 }
 
 .Tablet_lh{
-    position:absolute;
-    top:17%;
-    left:15%;
     background: url(../img/lh_tablet.png) no-repeat top / 70%;
     background-color:#111313;
-    z-index: 2;
+}
+
+.WorkFlexImg_list.lh li:last-child{
+    position:absolute;
+    top:24%;
+    left:10%;
+    z-index: 1;
 }
 
 .Mobile_lh{
-    position:absolute;
-    top:24%;
-    left:10%;
     background: url(../img/lh_mobile.png) no-repeat center top / 45%;
     background-color:#111313;
-    z-index: 1;
 }
 
 /* cu ------------------------------------*/
-.Desktop_cu{
+.WorkFlexImg_list.cu li:first-child{
     position:absolute;
     top:10%;
     left:10%;
-    background: url(../img/cu.png) no-repeat center top /cover;
     z-index: 3;
 }
 
-.Tablet_cu{
+.Desktop_cu{
+    background: url(../img/cu.png) no-repeat center top /cover;
+}
+
+.WorkFlexImg_list.cu li:nth-child(2){
     position:absolute;
     top:17%;
     left:15%;
-    background: url(../img/cu_tablet.png) no-repeat top / 70%;
-    background-color:#111313;
     z-index: 2;
 }
 
-.Mobile_cu{
+.Tablet_cu{
+    background: url(../img/cu_tablet.png) no-repeat top / 70%;
+      background-color:#111313;
+}
+
+.WorkFlexImg_list.cu li:last-child{
     position:absolute;
     top:24%;
     left:20%;
-    background: url(../img/cu_mobile.png) no-repeat center top / 45%;
-    background-color:#111313;
     z-index: 1;
+}
+
+.Mobile_cu{
+    background: url(../img/cu_mobile.png) no-repeat center top / 45%;
+      background-color:#111313;
 }
 
 /* WorkFlexTitle -------------------------------------------*/
@@ -924,9 +957,82 @@ header{
     position: absolute;
     bottom:6%;
     left:6%;
+    transition: all 0.5s;
     padding:0.8rem 4rem;
     border: 2px solid #fafafa;
     border-radius: 0.3rem;
     font-weight: 600;
     color: #fafafa;
+}
+
+.WorkFlexTitle_link:hover{
+    background-color: black;
+}
+
+/* FooterWrap ========================================*/
+.FooterWrap{
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+.FooterFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterFlex div{
+    width: 32.5%;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.FooterFlex_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #fafafa;
+}
+
+.FooterFlex_title span{
+    color: #999;
+}
+
+.FooterFlex_list{
+    margin-top: 1rem;
+}
+
+.FooterFlex_item{
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+    color: #c2c2c2;
+}
+
+.FooterContact{
+    margin-top: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.FooterContactFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.FooterEmail{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c2c2c2;
+}
+
+.FooterLink{
+    font-size: 1.5rem;
+    color: #999;
 }

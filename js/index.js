@@ -4,39 +4,33 @@ $(function(){
     const WorkFlex = $(".WorkFlex");
     const WorkFlexTitle_paragraph = $(".WorkFlexTitle_paragraph");
     const WorkFlexTitle_name =   $(".WorkFlexTitle_name");
+    const mousewheel_up = (index) =>{
+        if(MainWorkWrap.eq(index).offset().top > $(document).scrollTop()){
+            WorkFlex.eq(index).css({width : "80%", height : "80%"});
+            WorkFlexTitle_paragraph.eq(index).css({fontSize : "1rem"})
+            WorkFlexTitle_name.eq(index).css({fontSize : "0.8rem"})
+        }
+    }
+    const mousewheel_down = (index) =>{
+        WorkFlex.eq(index).css({width : "100%", height : "100%"});
+        WorkFlexTitle_paragraph.eq(index).css({fontSize : "1.4rem"})
+        WorkFlexTitle_name.eq(index).css({fontSize : "1rem"});
+    }
     $(window).mousewheel(function(e, delta){
         if(delta > 0){
-            if(MainWorkWrap.eq(0).offset().top > $(document).scrollTop()){
-                WorkFlex.eq(0).css({width : "80%", height : "80%"});
-                WorkFlexTitle_paragraph.eq(0).css({fontSize : "1rem"})
-                WorkFlexTitle_name.eq(0).css({fontSize : "0.8rem"})
-            }
-            if(MainWorkWrap.eq(1).offset().top > $(document).scrollTop()){
-                WorkFlex.eq(1).css({width : "80%", height : "80%"});
-                WorkFlexTitle_paragraph.eq(1).css({fontSize : "1rem"})
-                WorkFlexTitle_name.eq(1).css({fontSize : "0.8rem"})
-            }
-            if(MainWorkWrap.eq(2).offset().top > $(document).scrollTop()){
-                WorkFlex.eq(2).css({width : "80%", height : "80%"});
-                WorkFlexTitle_paragraph.eq(2).css({fontSize : "1rem"})
-                WorkFlexTitle_name.eq(2).css({fontSize : "0.8rem"})
-            }
+            mousewheel_up(0)
+            mousewheel_up(1)
+            mousewheel_up(2)
         }
         else if(delta < 0){
            if(300 < $(document).scrollTop()){
-                WorkFlex.eq(0).css({width : "100%", height : "100%"});
-                WorkFlexTitle_paragraph.eq(0).css({fontSize : "1.4rem"})
-                WorkFlexTitle_name.eq(0).css({fontSize : "1rem"});
+                mousewheel_down(0)
            } 
            if(MainWorkWrap.eq(0).offset().top < $(document).scrollTop()){
-                WorkFlex.eq(1).css({width : "100%", height : "100%"});
-                WorkFlexTitle_paragraph.eq(1).css({fontSize : "1.4rem"})
-                WorkFlexTitle_name.eq(1).css({fontSize : "1rem"});
+                mousewheel_down(1)
            }
            if(MainWorkWrap.eq(1).offset().top < $(document).scrollTop()){
-                WorkFlex.eq(2).css({width : "100%", height : "100%"});
-                WorkFlexTitle_paragraph.eq(2).css({fontSize : "1.4rem"})
-                WorkFlexTitle_name.eq(2).css({fontSize : "1rem"});
+                mousewheel_down(2)
            }
         }
     })
@@ -105,4 +99,24 @@ $(function(){
     StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-305px" , width : "305px"}, 1000, "linear").css({display : "block"});
     StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-255px" , width : "255px"}, 1000, "linear").css({display : "block"});
     StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-250px" , width : "250px"}, 1000, "linear").css({display : "block"});
+
+    // WorkSLide Interval ==================================================
+
+    const WorkFlexImg_list = $(".WorkFlexImg_list");
+
+    const WorkSlide = (index, position) =>{
+        WorkFlexImg_list.eq(index).find("li").eq(0).css({transform : "translateX(" + position +")"});
+        WorkFlexImg_list.eq(index).find("li").eq(2).css({transition : "all 1s"});
+        setTimeout(()=>{
+            WorkFlexImg_list.eq(index).find("li").eq(0).appendTo(WorkFlexImg_list.eq(index));
+            setTimeout(()=>{
+                WorkFlexImg_list.eq(index).find("li").eq(2).css({transform : "translateX(0%)"});
+                WorkFlexImg_list.eq(index).find("li").eq(2).css({transition : "none"});
+            }, 300)
+        }, 500)
+    }
+    setInterval(WorkSlide, 3000, 0, "-200%");
+    setInterval(WorkSlide, 3000, 1, "200%");
+    setInterval(WorkSlide, 3000, 2, "-200%");
+
 })

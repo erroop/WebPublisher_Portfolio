@@ -1,0 +1,64 @@
+body{
+    background-color: #080808;
+}
+
+header{
+    background-color: #000;
+}
+
+/* WorkMe ==================================================*/
+.WorkMe{
+    width: 68%;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.WorkMeTitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.MainWorkMe{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.MainWorkMe_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fafafa;
+}
+
+.MainWorkMe_paragraph{
+    margin-top: 2rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    color: #c2c2c2;
+}
+
+.WorkMeImgcontainer{
+    margin-top: 5rem;
+}
+
+.WorkMeImgList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WorkMeImgItem{
+    width: 300px;
+    height: 300px;
+    margin: 0.5rem;
+}
+
+.WorkMeImgItem img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    border-radius: 1rem;
+    object-fit: cover;
+}
