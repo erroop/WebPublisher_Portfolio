@@ -1,0 +1,236 @@
+.HeaderWrap{
+    display: flex;
+    justify-content: center;
+    background-color: #87d286;
+}
+
+.HeaderTitle{
+    position: relative;
+    margin: 5rem 5rem 0rem 0rem;
+    color: #fafafa;
+}
+
+.HeaderTitle_title{
+    font-size: 3rem;
+    font-family: "Hahmlet";
+}
+
+.HeaderTitle_title span{
+    font-size: 4.5rem;
+    font-family: "Hahmlet";
+}
+
+.HeaderTitle_list{
+    margin-top: 7rem;
+}
+
+.HeaderTitle_item{
+    display: flex;
+    justify-content: center;
+  
+    margin: 2rem 0rem;
+}
+
+.HeaderTitle_item span{
+    position: relative;
+    width: 50%;
+    font-size: 1.6rem;
+    font-family: "Hahmlet";
+}
+
+.HeaderTitle_item span:first-child{
+    text-align: center;
+}
+
+.HeaderTitle_item span:first-child::after{
+    position: absolute;
+    right: 0%;
+    width: 1px;
+    height: 25px;
+    background-color: #fafafa;
+    opacity: 0.6;
+    content: "";
+}
+
+.HeaderTitle_item span:last-child{
+    margin-left: 2rem;
+}
+
+.item_content_item{
+    font-family: "Hahmlet";
+}
+
+.item_content a{
+    text-decoration: underline;
+    color: #fafafa;
+    font-family: "Hahmlet";
+}
+
+.HeaderTitle_link{
+    position: relative;
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 328px;
+    height: 101px;
+    background: url("../img/island-mini.svg") no-repeat;
+}
+
+.HeaderTitle_link a{
+    position: absolute;
+    top:50%;
+    left:35%;
+    font-size: 1.3rem;
+    font-family: "Hahmlet";
+}
+
+.HeaderImg{
+    width: 800px;
+    height: 800px;
+    margin-left: 5rem;
+    background: url("../img/b314ea0dda72b478741eea4417b8f37c.jpg") no-repeat 45% / cover;
+}
+
+.MainTitleWrap{
+    width: 75%;
+    margin: auto;
+    margin-top: 180px;
+}
+
+.MainTitleWrap_title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color:#fafafa;
+}
+
+.MainPointWrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.MainPoint{
+    width: 49%;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.MainSlide{
+    width: 100%;
+    height: 464px;
+    background: url("../img/lh.png") no-repeat top / cover;
+}
+
+.TicketSlide{
+    width: 100%;
+    height: 464px;
+    background: url("../img/lh_hover.png") no-repeat top/ cover;
+}
+
+.MainPoint_title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.MainPoint_para{
+    padding: 2rem;
+    margin: 30px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #fafafa;
+}
+
+.MainChecker{
+    width: 75%;
+    margin: auto;
+    margin-top: 180px;
+}
+
+.MainHtml{
+    width: 100%;
+    height: 364px;
+    background: url("../img/lh_html.png") no-repeat top / contain;
+}
+
+.MainCss{
+    width: 100%;
+    height: 364px;
+    background: url("../img/lh_css.png") no-repeat top / contain;
+}
+
+.FooterWrap{
+    width: 95%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 2rem 0rem;
+}
+
+.FooterFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterFlex div{
+    width: 32.5%;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.FooterFlex_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #fafafa;
+}
+
+.FooterFlex_title span{
+    color: #999;
+}
+
+.FooterFlex_list{
+    margin-top: 1rem;
+}
+
+.FooterFlex_item{
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+    color: #c2c2c2;
+}
+
+.FooterContact{
+    margin-top: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+}
+
+.FooterContactFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.FooterEmail{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c2c2c2;
+}
+
+.FooterLink{
+    font-size: 1.5rem;
+    color: #999;
+}
