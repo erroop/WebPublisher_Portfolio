@@ -62,3 +62,9 @@ header{
     border-radius: 1rem;
     object-fit: cover;
 }
+
+
+/* light ===========================================*/
+header.light{
+    background-color: #f0f0f0;
+}

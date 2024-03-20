@@ -112,7 +112,6 @@ header{
     height: 953px;
     border-radius: 1rem;
     background-color: #1a1a1a;
-    box-shadow: 0px 0px 5px #fafafa;
     overflow: hidden;
 }
 
@@ -1011,6 +1010,11 @@ header{
     color: #c2c2c2;
 }
 
+.FooterFlex_item a{
+    color: #c2c2c2;
+    text-decoration: underline;
+}
+
 .FooterContact{
     margin-top: 2rem;
     padding: 2rem;
@@ -1035,4 +1039,153 @@ header{
 .FooterLink{
     font-size: 1.5rem;
     color: #999;
+}
+
+/* light mode =================================================*/
+.Header_Link.light{
+    color: #010101;
+}
+
+.Information.light{
+    background-color: #f0f0f0;
+}
+
+.Profilecontact_item_message_link.light{
+    color:#010101;
+}
+
+.Profilecontact_item_message.light{
+    background-color: #e8e8e8;
+}
+
+.Profilecontact_item_call_link.light{
+    color: #010101;
+}
+
+.Profilecontact_item_call.light{
+    background-color: #e8e8e8;
+}
+
+.ProfileGrid_cate_item.light.on{
+    border-bottom: 1px solid #010101;
+}
+
+.ProfileGrid_cate_item:first-child .icon.light.on{
+    background: url(../img/grid_01.svg) no-repeat center ;
+}
+.ProfileGrid_cate_item:nth-child(2) .icon.light.on{
+    background: url(../img/tstory_01.svg) no-repeat center ;
+}
+.ProfileGrid_cate_item:last-child .icon.light.on{
+    background: url(../img/folder_01.svg) no-repeat center ;
+}
+
+.WorkSlide.light{
+    background-color: #f0f0f0;
+}
+
+.Notice.light{
+    background-color: #f0f0f0;
+}
+
+.Stack_Social_About.light{
+    background-color: #f0f0f0;
+}
+
+.Contact.light{
+    background-color: #f0f0f0;
+}
+
+.ContactItem.light{
+    background-color: #e8e8e8;
+}
+
+.ContactItem.light a{
+    color:#010101;
+}
+
+.WorkFlexImg.light{
+    background-color: #f0f0f0;
+}
+
+.WorkFlexTitle.light{
+    background-color: #f0f0f0;
+}
+
+.WorkFlexTitle_link.light{
+    border: 1px solid #010101;
+    color:#010101;
+    background-color: #e8e8e8;
+}
+
+.WorkFlexImg_list li.light{
+    box-shadow: 0px 0px 5px #999;
+}
+
+.Tablet_coex.light{
+    background-color: #e8e8e8;
+}
+
+.Mobile_coex.light{
+    background-color: #e8e8e8;
+}
+
+.Tablet_lh.light{
+    background-color: #e8e8e8;
+}
+
+.Mobile_lh.light{
+    background-color: #e8e8e8;
+}
+
+.Tablet_cu.light{
+    background-color: #e8e8e8;
+}
+
+.Mobile_cu.light{
+    background-color: #e8e8e8;
+}
+
+.Footerstack.light{
+    background-color: #f0f0f0;
+}
+
+.FooterFlex_item.light{
+    color: #999;
+}
+
+.FooterFlex_item.light a{
+    color: #999;
+}
+
+.FooterProject.light{
+    background-color: #f0f0f0;
+}
+
+.FooterAdvantage.light{
+    background-color: #f0f0f0;
+}
+
+.FooterContact.light{
+    background-color: #f0f0f0;
+}
+
+strong.light{
+    color:#010101;
+}
+
+span.light{
+    color: #010101;
+}
+
+p.light{
+    color: #010101;
+}
+
+h2.light{
+    color: #010101;
+}
+
+h3.light{
+    color: #010101;
 }

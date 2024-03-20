@@ -22,48 +22,68 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- headerWrap -->
         <div class="HeaderWrap">
-            <div class="HeaderTitle">
-                <h1 class="HeaderTitle_title">Project1.
-                    <span>COEX</span>
-                </h1>
-                <ul class="HeaderTitle_list">
-                    <li class="HeaderTitle_item">
-                        <span class="item_cate">유형</span>
-                        <span class="item_content">개인 프로젝트</span>
-                    </li>
-                    <li class="HeaderTitle_item">
-                        <span class="item_cate">디바이스</span>
-                        <span class="item_content">
-                            <ul class="item_content_list">
-                                <li class="item_content_item">PC(1440px ~ ),</li>
-                                <li class="item_content_item">Tablet(748px ~ 1440px),</li>
-                                <li class="item_content_item">Mobile( ~ 748px)</li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li class="HeaderTitle_item">
-                        <span class="item_cate">구현페이지</span>
-                        <span class="item_content">
-                            <a href="https://erroop.github.io/coex-project/">index</a>
-                            <a href="https://erroop.github.io/coex-project/coexguide.html">coexguide</a>
-                        </span>
-                    </li>
-                    <li class="HeaderTitle_item">
-                        <span class="item_cate">기여도</span>
-                        <span class="item_content">퍼블리싱(100%)</span>
-                    </li>
-                </ul>
-                <div class="HeaderTitle_link">
-                    <a href="https://erroop.github.io/coex-project/">Github Page</a>
-                </div>
-            </div>
-            <div class="HeaderImg"></div>
+            <h1 class="Header_Title">
+                <a class="Header_Link" href="index.html">Park Seong Hyeon <p class="Header_Subtitle">Portfolio</p></a>
+            </h1>
+            <ul class="Header_List">
+                <li class="Mode">
+                   <span class="ModeBtn Dark"></span>
+                </li>
+                <li class="Blog">
+                    <a href="https://rotationyou.tistory.com/"></a>
+                </li>
+                <li class="Github">
+                    <a href="https://github.com/erroop"></a>
+                </li>
+            </ul>
         </div>
+        <!-- .headerWrap -->
     </header>
     <!-- .Header -->
     <!-- Main -->
     <main>
+        <section>
+            <div class="MainInfo">
+                <div class="MainInfoTitle">
+                    <h1 class="MainInfoTitle_title">Project1.
+                        <span>COEX</span>
+                    </h1>
+                    <ul class="MainInfoTitle_list">
+                        <li class="MainInfoTitle_item">
+                            <span class="item_cate">유형</span>
+                            <span class="item_content">개인 프로젝트</span>
+                        </li>
+                        <li class="MainInfoTitle_item">
+                            <span class="item_cate">디바이스</span>
+                            <span class="item_content">
+                                <ul class="item_content_list">
+                                    <li class="item_content_item">PC(1440px ~ ),</li>
+                                    <li class="item_content_item">Tablet(748px ~ 1440px),</li>
+                                    <li class="item_content_item">Mobile( ~ 748px)</li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li class="MainInfoTitle_item">
+                            <span class="item_cate">구현페이지</span>
+                            <span class="item_content">
+                                <a href="https://erroop.github.io/coex-project/">index</a>
+                                <a href="https://erroop.github.io/coex-project/coexguide.html">coexguide</a>
+                            </span>
+                        </li>
+                        <li class="MainInfoTitle_item">
+                            <span class="item_cate">기여도</span>
+                            <span class="item_content">퍼블리싱(100%)</span>
+                        </li>
+                    </ul>
+                    <div class="MainInfoTitle_link">
+                        <a href="https://erroop.github.io/coex-project/">Github Page</a>
+                    </div>
+                </div>
+                <div class="MainInfoImg"></div>
+            </div>
+        </section>
         <section class="MainTitle">
             <div class="MainTitleWrap">
                 <h2 class="MainTitleWrap_title">포인트 기능</h2>
@@ -131,9 +151,15 @@
                         <span>002</span>
                     </h3>
                     <ul class="FooterFlex_list">
-                        <li class="FooterFlex_item">coex</li>
-                        <li class="FooterFlex_item">LH 청약센터</li>
-                        <li class="FooterFlex_item">CU 편의점</li>
+                        <li class="FooterFlex_item">
+                            <a href="./coex.html">coex</a>
+                        </li>
+                        <li class="FooterFlex_item">
+                            <a href="./lh.html">LH 청약센터</a>
+                        </li>
+                        <li class="FooterFlex_item">
+                            <a href="./cu.html">CU 편의점</a>
+                        </li>
                         <li class="FooterFlex_item">kakao</li>
                         <li class="FooterFlex_item">Genesis</li>
                         <li class="FooterFlex_item">홈스케어</li>
@@ -174,5 +200,6 @@
     <!-- .Footer -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
 </body>
 </html>

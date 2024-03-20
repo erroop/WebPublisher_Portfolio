@@ -38,17 +38,41 @@ $(function(){
     // Darkmode / Lightmode btn click =========================
     const Mode = $(".Mode");
     Mode.find(".ModeBtn").click(function(){
+        console.log("ok")
         if($(this).hasClass("Dark")){
             $(this).removeClass("Dark").addClass("Light");
             $(this).stop().animate({left : "65%"}, 300);
             Mode.removeClass("Dark").addClass("Light");
-            $("body").css({backgroundColor : "#fafafa"});
+            $("header").addClass("light")
+            $("body").css({backgroundColor : "#e8e8e8"});
+            $(".Blog").css("background" , "url(../img/tstory_01.svg)");
+            $(".Github").css("background" , "url(../img/github_01.svg)");
+            $("a").addClass("light");
+            $("div").addClass("light");
+            $("ul").addClass("light");
+            $("span").addClass("light");
+            $("strong").addClass("light");
+            $("p").addClass("light");
+            $("li").addClass("light");
+            $("h2").addClass("light");
+            $("h3").addClass("light");
         }
         else if($(this).hasClass("Light")){
             $(this).removeClass("Light").addClass("Dark");
             $(this).stop().animate({left : "8%"}, 300)
             Mode.removeClass("Light").addClass("Dark");
             $("body").css({backgroundColor : "#111313"});
+            $(".Blog").css("background" , "url(../img/tstorylogo.svg)");
+            $(".Github").css("background" , "url(../img/githublogo.svg)");
+            $("a").removeClass("light");
+            $("div").removeClass("light");
+            $("ul").removeClass("light");
+            $("span").removeClass("light");
+            $("strong").removeClass("light");
+            $("p").removeClass("light");
+            $("li").removeClass("light");
+            $("h2").removeClass("light");
+            $("h3").removeClass("light");
         }
     })
 
@@ -100,6 +124,7 @@ $(function(){
     StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-255px" , width : "255px"}, 1000, "linear").css({display : "block"});
     StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-250px" , width : "250px"}, 1000, "linear").css({display : "block"});
 
+    
     // WorkSLide Interval ==================================================
 
     const WorkFlexImg_list = $(".WorkFlexImg_list");

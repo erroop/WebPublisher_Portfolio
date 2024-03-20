@@ -1,48 +1,146 @@
+/* Header ==================================*/
+header{
+    min-height: 5rem;
+}
+
+
 .HeaderWrap{
+    position: relative;
+    width: 95%;
+    min-height: 5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+
+/* Header_Title =============================*/
+.Header_Link{
+    font-size: 1.1rem;
+    color: #fafafa;
+}
+
+.Header_Subtitle{
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+
+/* Header_List =================================*/
+.Header_List{
+    display: flex;
+    align-items: center;
+}
+
+.Header_List li{
+    float: left;
+    margin-left: 1rem;
+}
+
+.Header_List li a{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* Mode ----------------------------------*/
+.Mode{
+    position: relative;
+    width: 3rem;
+    height: 1.3rem;
+    border: 2px solid #fafafa;
+    border-radius: 1rem;
+}
+
+.Mode.Dark{
+    border: 2px solid #fafafa;
+    border-radius: 1rem;
+}
+
+.Mode.Light{
+    border: 2px solid #111313;
+    border-radius: 1rem;
+}
+
+.ModeBtn{
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ModeBtn.Dark{
+    background-color: #fafafa;
+}
+
+
+.ModeBtn.Light{
+    background-color: #111313;
+}
+
+
+/* Blog ---------------------------------------*/
+.Blog{
+    background: url(../img/tstorylogo.svg) no-repeat;
+}
+
+
+/* Github --------------------------------------*/
+.Github{
+    background: url(../img/githublogo.svg) no-repeat;
+}
+
+.MainInfo{
     display: flex;
     justify-content: center;
     background-color: #87d286;
 }
 
-.HeaderTitle{
+.MainInfoTitle{
     position: relative;
     margin: 5rem 5rem 0rem 0rem;
     color: #fafafa;
 }
 
-.HeaderTitle_title{
+.MainInfoTitle_title{
     font-size: 3rem;
     font-family: "Hahmlet";
 }
 
-.HeaderTitle_title span{
+.MainInfoTitle_title span{
     font-size: 4.5rem;
     font-family: "Hahmlet";
 }
 
-.HeaderTitle_list{
+.MainInfoTitle_list{
     margin-top: 7rem;
 }
 
-.HeaderTitle_item{
+.MainInfoTitle_item{
     display: flex;
     justify-content: center;
-  
     margin: 2rem 0rem;
 }
 
-.HeaderTitle_item span{
+.MainInfoTitle_item span{
     position: relative;
     width: 50%;
     font-size: 1.6rem;
     font-family: "Hahmlet";
 }
 
-.HeaderTitle_item span:first-child{
+.MainInfoTitle_item span:first-child{
     text-align: center;
 }
 
-.HeaderTitle_item span:first-child::after{
+.MainInfoTitle_item span:first-child::after{
     position: absolute;
     right: 0%;
     width: 1px;
@@ -52,7 +150,7 @@
     content: "";
 }
 
-.HeaderTitle_item span:last-child{
+.MainInfoTitle_item span:last-child{
     margin-left: 2rem;
 }
 
@@ -66,7 +164,7 @@
     font-family: "Hahmlet";
 }
 
-.HeaderTitle_link{
+.MainInfoTitle_link{
     position: relative;
     position: absolute;
     bottom:0%;
@@ -77,7 +175,7 @@
     background: url("../img/island-mini.svg") no-repeat;
 }
 
-.HeaderTitle_link a{
+.MainInfoTitle_link a{
     position: absolute;
     top:50%;
     left:35%;
@@ -85,7 +183,7 @@
     font-family: "Hahmlet";
 }
 
-.HeaderImg{
+.MainInfoImg{
     width: 800px;
     height: 800px;
     margin-left: 5rem;
@@ -209,6 +307,11 @@
     color: #c2c2c2;
 }
 
+.FooterFlex_item a{
+    color: #c2c2c2;
+    text-decoration: underline;
+}
+
 .FooterContact{
     margin-top: 2rem;
     padding: 2rem;
@@ -233,4 +336,87 @@
 .FooterLink{
     font-size: 1.5rem;
     color: #999;
+}
+
+/* light mode =================================================*/
+.Header_Link.light{
+    color: #010101;
+}
+
+.Information.light{
+    background-color: #f0f0f0;
+}
+
+.Profilecontact_item_message_link.light{
+    color:#010101;
+}
+
+.Profilecontact_item_message.light{
+    background-color: #e8e8e8;
+}
+
+.Profilecontact_item_call_link.light{
+    color: #010101;
+}
+
+.Profilecontact_item_call.light{
+    background-color: #e8e8e8;
+}
+
+.ProfileGrid_cate_item.light.on{
+    border-bottom: 1px solid #010101;
+}
+
+.ProfileGrid_cate_item:first-child .icon.light.on{
+    background: url(../img/grid_01.svg) no-repeat center ;
+}
+.ProfileGrid_cate_item:nth-child(2) .icon.light.on{
+    background: url(../img/tstory_01.svg) no-repeat center ;
+}
+.ProfileGrid_cate_item:last-child .icon.light.on{
+    background: url(../img/folder_01.svg) no-repeat center ;
+}
+
+.MainTitleWrap_title.light{
+    color: #010101;
+}
+
+.MainPoint.light{
+    background-color: #f0f0f0;
+}
+
+.Footerstack.light{
+    background-color: #f0f0f0;
+}
+
+.FooterFlex_item.light{
+    color: #999;
+}
+
+.FooterFlex_item.light a{
+    color: #999;
+}
+
+.FooterProject.light{
+    background-color: #f0f0f0;
+}
+
+.FooterAdvantage.light{
+    background-color: #f0f0f0;
+}
+
+.FooterContact.light{
+    background-color: #f0f0f0;
+}
+
+h2.light{
+    color: #010101;
+}
+
+h3.light{
+    color: #010101;
+}
+
+p.light{
+    color: #010101;
 }
