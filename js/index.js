@@ -13,7 +13,7 @@ $(function(){
     }
     const mousewheel_down = (index) =>{
         WorkFlex.eq(index).css({width : "100%", height : "100%"});
-        WorkFlexTitle_paragraph.eq(index).css({fontSize : "1.4rem"})
+        WorkFlexTitle_paragraph.eq(index).css({fontSize : "1.3rem"})
         WorkFlexTitle_name.eq(index).css({fontSize : "1rem"});
     }
     $(window).mousewheel(function(e, delta){
@@ -118,11 +118,11 @@ $(function(){
 
     // Skill Stack percent bar ====================================
     const StackList = $(".StackList");
-    StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-350px" , width : "350px"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-400px" , width : "400px"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-305px" , width : "305px"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-255px" , width : "255px"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-250px" , width : "250px"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-22rem" , width : "22rem"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-25rem" , width : "25rem"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-20rem" , width : "20rem"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-17rem" , width : "17rem"}, 1000, "linear").css({display : "block"});
+    StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-16rem" , width : "16rem"}, 1000, "linear").css({display : "block"});
 
     
     // WorkSLide Interval ==================================================
