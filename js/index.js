@@ -17,21 +17,23 @@ $(function(){
         WorkFlexTitle_name.eq(index).css({fontSize : "1rem"});
     }
     $(window).mousewheel(function(e, delta){
-        if(delta > 0){
-            mousewheel_up(0)
-            mousewheel_up(1)
-            mousewheel_up(2)
-        }
-        else if(delta < 0){
-           if(300 < $(document).scrollTop()){
-                mousewheel_down(0)
-           } 
-           if(MainWorkWrap.eq(0).offset().top < $(document).scrollTop()){
-                mousewheel_down(1)
-           }
-           if(MainWorkWrap.eq(1).offset().top < $(document).scrollTop()){
-                mousewheel_down(2)
-           }
+        if(window.innerWidth > 810){
+            if(delta > 0){
+                mousewheel_up(0)
+                mousewheel_up(1)
+                mousewheel_up(2)
+            }
+            else if(delta < 0){
+               if(300 < $(document).scrollTop()){
+                    mousewheel_down(0)
+               } 
+               if(MainWorkWrap.eq(0).offset().top < $(document).scrollTop()){
+                    mousewheel_down(1)
+               }
+               if(MainWorkWrap.eq(1).offset().top < $(document).scrollTop()){
+                    mousewheel_down(2)
+               }
+            }
         }
     })
 
