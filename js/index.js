@@ -61,6 +61,7 @@ $(function(){
             $(this).removeClass("Light").addClass("Dark");
             $(this).stop().animate({left : "8%"}, 300)
             Mode.removeClass("Light").addClass("Dark");
+            $("header").removeClass("light")
             $("body").css({backgroundColor : "#111313"});
             $(".Blog").css("background" , "url(../img/tstorylogo.svg)");
             $(".Github").css("background" , "url(../img/githublogo.svg)");
@@ -118,11 +119,23 @@ $(function(){
 
     // Skill Stack percent bar ====================================
     const StackList = $(".StackList");
-    StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-22rem" , width : "22rem"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-25rem" , width : "25rem"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-20rem" , width : "20rem"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-17rem" , width : "17rem"}, 1000, "linear").css({display : "block"});
-    StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-16rem" , width : "16rem"}, 1000, "linear").css({display : "block"});
+    if(window.innerWidth > 810){
+        StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-22rem" , width : "22rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-25rem" , width : "25rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-20rem" , width : "20rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-17rem" , width : "17rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-16rem" , width : "16rem"}, 1000, "linear").css({display : "block"});0
+
+    }
+    else if(window.innerWidth < 810){
+        StackList.find(".StackItem").eq(0).find(".PercentBar").animate({right : "-17rem" , width : "17rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(1).find(".PercentBar").delay(200).animate({right : "-19rem" , width : "19rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(2).find(".PercentBar").delay(400).animate({right : "-15rem" , width : "15rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(3).find(".PercentBar").delay(600).animate({right : "-12rem" , width : "12rem"}, 1000, "linear").css({display : "block"});
+        StackList.find(".StackItem").eq(4).find(".PercentBar").delay(800).animate({right : "-9rem" , width : "9rem"}, 1000, "linear").css({display : "block"});0
+    }
+    
+    
 
     
     // WorkSLide Interval ==================================================

@@ -68,3 +68,67 @@ header{
 header.light{
     background-color: #f0f0f0;
 }
+.WorkMeImgItem.light img{
+    filter: brightness(100%);
+}
+
+@media screen and (min-width : 1640px) and (max-width:1880px){
+    html{
+        font-size: 13.8px;
+    }
+
+    .WorkMeImgList{
+        justify-content: space-between;
+    }
+
+    .WorkMeImgItem{
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media screen and (min-width : 1240px) and (max-width:1440px){
+    html{
+        font-size: 12px;
+    }
+
+    .WorkMeImgList{
+        justify-content: space-between;
+    }
+
+    .WorkMeImgItem{
+        width: 195px;
+        height: 195px;
+    }
+}
+
+@media screen and (min-width : 810px) and (max-width:1240px){
+    html{
+        font-size: 12px;
+    }
+
+    .WorkMeImgList{
+        justify-content: space-between;
+    }
+
+    .WorkMeImgItem{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width : 430px) and (max-width:810px){
+    html{
+        font-size: 12px;
+    }
+
+    .WorkMeImgList{
+        justify-content: center;
+    }
+
+    .WorkMeImgItem{
+        width: 100%;
+        height: 100%;
+    }
+
+}

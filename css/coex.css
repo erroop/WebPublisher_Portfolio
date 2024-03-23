@@ -421,3 +421,232 @@ h3.light{
 p.light{
     color: #010101;
 }
+
+
+@media screen and (min-width : 1640px) and (max-width:1880px){
+    html{
+        font-size: 14.5px;
+    }
+
+    .MainInfoImg{
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media screen and (min-width : 1440px) and (max-width:1640px){
+    html{
+        font-size: 13px;
+    }
+
+    .MainInfoImg{
+        width: 550px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width : 1240px) and (max-width:1440px){
+    html{
+        font-size: 11px;
+    }
+
+    .MainInfoImg{
+        width: 550px;
+        height: 600px;
+    }
+
+    .MainHtml{
+        height: 200px;
+        background-size: 100%;
+    }
+
+    .MainCss{
+        height: 200px;
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width : 810px) and (max-width:1240px){
+    html{
+        font-size: 11px;
+    }
+
+    .MainInfo{
+        position: relative;
+        flex-direction: column;
+    }
+
+    .MainInfoTitle{
+        position: relative;
+        margin: 0px;
+        padding-top: 5rem;
+        z-index: 999;
+    }
+
+    .MainInfoTitle{
+        height: 500px;
+    }
+
+    .MainInfoTitle_title{
+        text-align: center;
+    }
+
+    .item_content{
+        text-align: center;
+    }
+
+    .MainInfoTitle_item span:last-child{
+        margin: 0px;
+    }
+
+    .MainInfoTitle_link a{
+        font-size: 1.5rem;
+    }
+
+    .MainInfoImg{
+        position: absolute;
+        top:0%;
+        left:0%;
+        margin: 0px;
+        width: 110%;
+        height: 100%;
+        opacity: 0.6;
+        filter: brightness(40%);
+    }
+
+    .MainSlide{
+        height: 300px;
+    }
+
+    .TicketSlide{
+        height: 300px;
+    }
+
+    .MainHtml{
+        height: 200px;
+        background-size: 100%;
+    }
+
+    .MainCss{
+        height: 200px;
+        background-size: 100%;
+    }
+
+    .MainTitleWrap{
+        margin-top: 100px;
+    }
+
+    .MainChecker{
+        margin-top: 100px;
+    }
+
+    .MainPointWrap{
+        margin-top: 60px;
+    }
+
+    .MainPoint_title{
+        margin-top: 20px;
+    }
+
+    .MainPoint_para{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:810px){
+    html{
+        font-size: 9px;
+    }
+
+    .MainInfo{
+        position: relative;
+        flex-direction: column;
+    }
+
+    .MainInfoTitle{
+        position: relative;
+        margin: 0px;
+        padding-top: 5rem;
+        z-index: 999;
+    }
+
+    .MainInfoTitle{
+        height: 450px;
+    }
+
+    .MainInfoTitle_title{
+        text-align: center;
+    }
+
+    .MainInfoTitle_title span{
+        font-size: 3rem;
+    }
+
+
+    .item_content{
+        text-align: center;
+    }
+
+    .MainInfoTitle_item span:last-child{
+        margin: 0px;
+    }
+
+    .MainInfoTitle_link a{
+        font-size: 2rem;
+    }
+
+    .MainInfoImg{
+        position: absolute;
+        top:0%;
+        left:-5%;
+        margin: 0px;
+        width: 110%;
+        height: 100%;
+        opacity: 0.6;
+        filter: brightness(40%);
+    }
+
+    .MainSlide{
+        height: 300px;
+    }
+
+    .TicketSlide{
+        height: 300px;
+    }
+
+    .MainHtml{
+        height: 150px;
+        background-size: 100%;
+    }
+
+    .MainCss{
+        height: 150px;
+        background-size: 100%;
+    }
+
+    .MainTitleWrap{
+        margin-top: 100px;
+    }
+
+    .MainChecker{
+        margin-top: 80px;
+    }
+
+    .MainPointWrap{
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+    .MainPoint{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .MainPoint_title{
+        margin-top: 20px;
+    }
+
+    .MainPoint_para{
+        margin: 0px;
+    }
+}
