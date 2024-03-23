@@ -63,8 +63,8 @@ $(function(){
             Mode.removeClass("Light").addClass("Dark");
             $("header").removeClass("light")
             $("body").css({backgroundColor : "#111313"});
-            $(".Blog").css("background" , "url(../img/tstorylogo.svg)");
-            $(".Github").css("background" , "url(../img/githublogo.svg)");
+            $(".Blog").css("background" , "url(./img/tstorylogo.svg)");
+            $(".Github").css("background" , "url(./img/githublogo.svg)");
             $("a").removeClass("light");
             $("div").removeClass("light");
             $("ul").removeClass("light");
