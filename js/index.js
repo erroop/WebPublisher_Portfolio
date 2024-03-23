@@ -45,8 +45,8 @@ $(function(){
             Mode.removeClass("Dark").addClass("Light");
             $("header").addClass("light")
             $("body").css({backgroundColor : "#e8e8e8"});
-            $(".Blog").css("background" , "url(../img/tstory_01.svg)");
-            $(".Github").css("background" , "url(../img/github_01.svg)");
+            $(".Blog").css("background" , "url(./img/tstory_01.svg)");
+            $(".Github").css("background" , "url(./img/github_01.svg)");
             $("a").addClass("light");
             $("div").addClass("light");
             $("ul").addClass("light");
