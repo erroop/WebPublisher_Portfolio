@@ -47,8 +47,8 @@ $(function(){
             Mode.removeClass("Dark").addClass("Light");
             $("header").addClass("light")
             $("body").css({backgroundColor : "#e8e8e8"});
-            $(".Blog").css("background" , "url(./img/tstory_01.svg)");
-            $(".Github").css("background" , "url(./img/github_01.svg)");
+            $(".Blog").css("background" , "url(./img/tstory_01.svg) no-repeat");
+            $(".Github").css("background" , "url(./img/github_01.svg) no-repeat");
             $("a").addClass("light");
             $("div").addClass("light");
             $("ul").addClass("light");
@@ -65,8 +65,8 @@ $(function(){
             Mode.removeClass("Light").addClass("Dark");
             $("header").removeClass("light")
             $("body").css({backgroundColor : "#111313"});
-            $(".Blog").css("background" , "url(./img/tstorylogo.svg)");
-            $(".Github").css("background" , "url(./img/githublogo.svg)");
+            $(".Blog").css("background" , "url(./img/tstorylogo.svg) no-repeat");
+            $(".Github").css("background" , "url(./img/githublogo.svg) no-repeat");
             $("a").removeClass("light");
             $("div").removeClass("light");
             $("ul").removeClass("light");
